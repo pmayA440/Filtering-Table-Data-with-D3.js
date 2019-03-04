@@ -1,42 +1,21 @@
 // from data.js
 var tableData = data;
 
-// 
-
 
 // Creates datetime mapping
-var datetimes = tableData.map(function(dt) {
-    return dt.datetime;
-    console.log(datetimes);
-});
+var datetimes = tableData.map(dt => dt.datetime);
 
 // Creates city mapping
-var cities = tableData.map(function(c) {
-    return c.city;
-    console.log(cities);
-});
+var cities = tableData.map(c => c.city);
 
 // Creates state mapping
-var states = tableData.map(function(s) {
-    return s.state;
-    console.log(states);
-});
+var states = tableData.map(s => s.state);
 
 // Creates country mapping
-var countries = tableData.map(function(co) {
-    return co.country;
-    console.log(countries);
-});
+var countries = tableData.map(co => co.country);
 
 // Creates shape mapping
-var shapes = tableData.map(function(sh) {
-    return sh.shape;
-    console.log(shapes);
-});
+var shapes = tableData.map(sh => sh.shape);
 
 // Creates comment mapping
-var comments = tableData.map(function(com) {
-    return com.comment;
-    console.log(comments);
-});
-
+var comments = tableData.map(com => com.comment);
