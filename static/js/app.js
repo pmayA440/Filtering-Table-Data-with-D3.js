@@ -26,5 +26,18 @@ function dateFilter(x) {
 }
 
 // Test function and filter
-var firstDate = tableData.filter(dateFilter);
-console.log(firstDate);
+var dateInForm = tableData.filter(dateFilter);
+console.log(dateInForm);
+
+// Reference table body
+var tbody = d3.select("tbody");
+
+// Loop through selected data, append rows, add table data
+dateInForm.forEach((formDate) => {
+    var row = tbody.append("tr");
+    Object.entries(formDate).forEach(([key, value]) => {
+      var cell = tbody.append("td");
+      cell.text(value);
+    });
+  });
+  
