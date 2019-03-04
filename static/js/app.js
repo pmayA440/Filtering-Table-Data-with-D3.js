@@ -19,3 +19,12 @@ var shapes = tableData.map(sh => sh.shape);
 
 // Creates comment mapping
 var comments = tableData.map(com => com.comment);
+
+// Designs function for filtering datetime
+function dateFilter(x) {
+    return x.datetime === '1/1/2010';
+}
+
+// Test function and filter
+var firstDate = tableData.filter(dateFilter);
+console.log(firstDate);
